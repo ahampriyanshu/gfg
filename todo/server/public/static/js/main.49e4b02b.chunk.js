@@ -1,0 +1,2 @@
+(this.webpackJsonptodo=this.webpackJsonptodo||[]).push([[0],{16:function(e,t,n){"use strict";n.r(t);var o=n(1),s=n(15),a=n.n(s),c=(n(21),n(6)),r=n.n(c),d=n(4),i=Object(o.lazy)((function(){return Promise.all([n.e(3),n.e(4)]).then(n.bind(null,41))}));r.a.defaults.headers.post["Content-Type"]="multipart/form-data",a.a.render(Object(d.jsx)(o.Suspense,{fallback:"Loading...",children:Object(d.jsx)(o.StrictMode,{children:Object(d.jsx)(i,{})})}),document.getElementById("root"))},21:function(e,t,n){}},[[16,1,2]]]);
+//# sourceMappingURL=main.49e4b02b.chunk.js.map
