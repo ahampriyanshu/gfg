@@ -13,15 +13,13 @@
       ],
       "payable": false,
       "stateMutability": "view",
-      "type": "function",
-      "signature": "0x61bc221a"
+      "type": "function"
     },
     {
       "inputs": [],
       "payable": false,
       "stateMutability": "nonpayable",
-      "type": "constructor",
-      "signature": "constructor"
+      "type": "constructor"
     },
     {
       "constant": false,
@@ -30,18 +28,17 @@
       "outputs": [],
       "payable": false,
       "stateMutability": "nonpayable",
-      "type": "function",
-      "signature": "0x0ffca1dd"
+      "type": "function"
     }
   ],
-  "bytecode": "0x60806040526000805534801561001457600080fd5b5061002c610031640100000000026401000000009004565b610044565b6000808154809291906001019190505550565b60cf806100526000396000f3fe6080604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630ffca1dd14604e57806361bc221a146062575b600080fd5b348015605957600080fd5b506060608a565b005b348015606d57600080fd5b506074609d565b6040518082815260200191505060405180910390f35b6000808154809291906001019190505550565b6000548156fea165627a7a723058204c99f6e6c0f5cfd8013bb39888babc9f2a8408c573ca34df6e5b2d79679b39460029",
-  "deployedBytecode": "0x6080604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630ffca1dd14604e57806361bc221a146062575b600080fd5b348015605957600080fd5b506060608a565b005b348015606d57600080fd5b506074609d565b6040518082815260200191505060405180910390f35b6000808154809291906001019190505550565b6000548156fea165627a7a723058204c99f6e6c0f5cfd8013bb39888babc9f2a8408c573ca34df6e5b2d79679b39460029",
+  "bytecode": "0x60806040526000805534801561001457600080fd5b5061002c610031640100000000026401000000009004565b610044565b6000808154809291906001019190505550565b60cf806100526000396000f3fe6080604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630ffca1dd14604e57806361bc221a146062575b600080fd5b348015605957600080fd5b506060608a565b005b348015606d57600080fd5b506074609d565b6040518082815260200191505060405180910390f35b6000808154809291906001019190505550565b6000548156fea165627a7a723058209f6a218cfc0717f73b9684f0944d6e1e8cc0cbfb712e5be28934aacf5c028b370029",
+  "deployedBytecode": "0x6080604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630ffca1dd14604e57806361bc221a146062575b600080fd5b348015605957600080fd5b506060608a565b005b348015606d57600080fd5b506074609d565b6040518082815260200191505060405180910390f35b6000808154809291906001019190505550565b6000548156fea165627a7a723058209f6a218cfc0717f73b9684f0944d6e1e8cc0cbfb712e5be28934aacf5c028b370029",
   "sourceMap": "25:167:1:-;;;73:1;51:23;;79:50;8:9:-1;5:2;;;30:1;27;20:12;5:2;79:50:1;106:18;:16;;;:18;;;:::i;:::-;25:167;;133:56;174:7;;:10;;;;;;;;;;;;;133:56::o;25:167::-;;;;;;;",
   "deployedSourceMap": "25:167:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;133:56;;8:9:-1;5:2;;;30:1;27;20:12;5:2;133:56:1;;;;;;51:23;;8:9:-1;5:2;;;30:1;27;20:12;5:2;51:23:1;;;;;;;;;;;;;;;;;;;;;;;133:56;174:7;;:10;;;;;;;;;;;;;133:56::o;51:23::-;;;;:::o",
   "source": "pragma solidity ^0.5.0;\n\ncontract TestContract {\n  uint public counter = 0;\n\n  constructor() public {\n    IncrementCounter();\n  }\n\n  function IncrementCounter() public {\n    counter ++;\n  }\n\n}",
-  "sourcePath": "/home/priyanshu/gfg/truffle-metamask/TestContract/contracts/TestContract.sol",
+  "sourcePath": "/home/priyanshu/gfg/truffle-metamask/contracts/TestContract.sol",
   "ast": {
-    "absolutePath": "/home/priyanshu/gfg/truffle-metamask/TestContract/contracts/TestContract.sol",
+    "absolutePath": "/home/priyanshu/gfg/truffle-metamask/contracts/TestContract.sol",
     "exportedSymbols": {
       "TestContract": [
         52
@@ -260,7 +257,7 @@
     "src": "0:192:1"
   },
   "legacyAST": {
-    "absolutePath": "/home/priyanshu/gfg/truffle-metamask/TestContract/contracts/TestContract.sol",
+    "absolutePath": "/home/priyanshu/gfg/truffle-metamask/contracts/TestContract.sol",
     "exportedSymbols": {
       "TestContract": [
         52
@@ -482,22 +479,9 @@
     "name": "solc",
     "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
   },
-  "networks": {
-    "1337": {
-      "events": {},
-      "links": {},
-      "address": "0x791671fBC0ca3a397FA0be63993D7c1443E2e8DD",
-      "transactionHash": "0x80a0bd266ca0874d54d18846b5ba16588e19c45e3ef6930fd4947cecaea83623"
-    },
-    "5777": {
-      "events": {},
-      "links": {},
-      "address": "0x2E906C24879b707d4eAF6Ca276CFF244E6BAAd07",
-      "transactionHash": "0xaabb5f52918550c3549fa0173789acb452fac6bcd6eea0ab8ef81d354bb5d60c"
-    }
-  },
+  "networks": {},
   "schemaVersion": "3.0.1",
-  "updatedAt": "2022-01-19T17:07:28.332Z",
+  "updatedAt": "2022-01-31T06:46:28.503Z",
   "devdoc": {
     "methods": {}
   },
