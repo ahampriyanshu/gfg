@@ -4,7 +4,7 @@ const app = require("./app"),
 dotenv.config({ path: ".env" });
 
 const port = process.env.PORT || 5000,
-  db = process.env.MONGODB_URI;
+  db = 'mongodb://localhost/task';
 
 mongoose
   .connect(db, {

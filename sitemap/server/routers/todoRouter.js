@@ -2,7 +2,7 @@ const express = require("express"),
   router = express.Router();
 
 /*
-  project's routes
+  todo's routes
 */
 
 module.exports = router;

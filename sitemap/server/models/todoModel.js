@@ -1,5 +1,5 @@
 const mongoose = require("mongoose"),
-  projectSchema = new mongoose.Schema(
+  todoSchema = new mongoose.Schema(
     {
       title: { type: String, unique: true },
     },

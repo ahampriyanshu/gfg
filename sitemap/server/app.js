@@ -6,7 +6,7 @@ app = express();
 app.use("/sitemap.xml", sitemapRouter);
 
 const port = 3000,
-  db = 'mongodb://localhost/project';
+  db = 'mongodb://localhost/todo';
 
 mongoose
   .connect(db)

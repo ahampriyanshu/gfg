@@ -85,7 +85,7 @@ export default function App() {
     };
     ContactService.create(form)
       .then((res) => {
-        toast.success(`${res}`);
+        toast.success(`Task Added`);
         closeModal();
         refresh();
       })
