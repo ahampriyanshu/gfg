@@ -1,18 +1,21 @@
 package main
 
 import (
-	"os"
-	"github.com/gin-gonic/gin"
+    "encoding/json"
+    "log"
+    "net/http"
+    "github.com/gorilla/mux"
 )
 
 func main() {
-	port := "8080"
-	router := gin.Default()
+    router := mux.NewRouter()
+    router.HandleFunc("/", func(rw http.ResponseWriter, r *http.Request) {
+        response := map[string]string{
+            "response": "Dockerizing Go Application",
+        }
+        json.NewEncoder(rw).Encode(response)
+    })
 
-	router.GET("/", func(c *gin.Context) {
-		c.String(200, "Dockerizing Go Application")
-	})
-
-
-	router.Run(":" + port)
+    log.Println("⚡️[bootup]: Server is running at port: 5000")
+    http.ListenAndServe(":5000", router)
 }
