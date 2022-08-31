@@ -1,11 +1,11 @@
-# Fetching the latest node image on apline linux
+# Fetching the minified node image on apline linux
 FROM node:slim
 
 # Declaring env
 ENV NODE_ENV production
 
 # Setting up the work directory
-WORKDIR /express-gfg
+WORKDIR /express-docker
 
 # Copying all the files in our project
 COPY . .
@@ -20,4 +20,4 @@ RUN npm install pm2 -g
 CMD pm2 start process.yml && tail -f /dev/null
 
 # Exposing server port
-EXPOSE 5000
+EXPOSE 5002
