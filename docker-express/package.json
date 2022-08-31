@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "pm2" : "pm2 start index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
