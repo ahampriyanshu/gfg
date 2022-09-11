@@ -1,0 +1,33 @@
+version: '3.9'
+
+services:
+
+  nginx:
+    build: ./nginx
+    ports:
+      - 1337:80
+    volumes:
+      - static_volume:/home/app/web/static
+      - media_volume:/home/app/web/mediafiles
+    depends_on:
+      - web
+    restart: "on-failure"
+
+  web:
+    build:
+      context: ./web
+    command: sh -c "python manage.py makemigrations &&
+                    python manage.py migrate &&
+                    python manage.py collectstatic &&
+                    gunicorn web.wsgi:application --bind 0.0.0.0:8000"
+    volumes:
+      - static_volume:/home/app/web/staticfiles
+      - media_volume:/home/app/web/mediafiles
+    expose: 
+    - 8000
+    restart: "on-failure"
+
+volumes:
+  postgres_data:
+  static_volume:
+  media_volume:
